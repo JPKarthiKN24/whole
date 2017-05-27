@@ -1,0 +1,45 @@
+
+body{
+	background-image: url("image/biker5.jpg");
+	background-size: 1500px;
+	
+}
+h3{
+	text-align: center;
+	color: orange;	
+}
+pre{
+	text-align: center;
+	//background-color: #808080;
+}
+h1{
+	text-align: center;
+	color: red;
+}
+span{
+	color: red;
+	font-size:30px;
+}
+/*input{
+	margin-bottom:200px;
+	
+}*/
+#label{
+	margin-left: 18px;
+}
+#addlabel{
+	margin-left: -33px;
+	
+}
+#button {
+	border-radius: 5px;
+	border: 2px solid #6495ED;
+	background-color: #BCD2EE;
+	height: 22px;
+	width: 80px;
+	margin: auto;
+	text-align: center;
+}
+#button:hover{
+	background-color: blue;
+}

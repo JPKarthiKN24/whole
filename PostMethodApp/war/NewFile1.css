@@ -1,0 +1,43 @@
+body{
+	background-image: url("image/biker4.jpg");
+	background-size: cover;
+	
+}
+h3{
+	text-align: center;	
+	color: orange;
+}
+pre{
+	text-align: center;
+	//background-color: #808080;
+}
+h1{
+	text-align: center;
+	color: red;
+}
+span{
+	color: red;
+	font-size:30px;
+}
+name{
+	size:200px;
+	
+}
+/*#namebox{
+	margin-left: 65px;
+}*/
+#label{
+	margin-left: 65px;
+}
+#button {
+	border-radius: 5px;
+	border: 2px solid #6495ED;
+	background-color: #BCD2EE;
+	height: 22px;
+	width: 80px;
+	margin: auto;
+	text-align: center;
+}
+#button:hover{
+	background-color: blue;
+}

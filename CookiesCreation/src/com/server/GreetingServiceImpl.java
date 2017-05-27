@@ -1,0 +1,43 @@
+package com.server;
+import java.io.*;  
+import javax.servlet.*;  
+import javax.servlet.http.*;
+
+import com.client.GreetingService;
+import com.shared.FieldVerifier;
+import com.google.gwt.user.server.rpc.RemoteServiceServlet;
+
+/**
+ * The server-side implementation of the RPC service.
+ */
+@SuppressWarnings("serial")
+public class GreetingServiceImpl extends RemoteServiceServlet implements GreetingService {
+
+	 public void doPost(HttpServletRequest request, HttpServletResponse response){  
+		    try{  
+		  
+		    response.setContentType("text/html");  
+		    PrintWriter out = response.getWriter();  
+		          
+		    String n=request.getParameter("userName");  
+		    out.print("Welcome "+n);  
+		  
+		    Cookie ck=new Cookie("uname",n);//creating cookie object  
+		    response.addCookie(ck);//adding cookie in the response  
+		  
+		    //creating submit button  
+		    out.print("<form action='servlet2'>");  
+		    out.print("<input type='submit' value='go'>");  
+		    out.print("</form>");  
+		          
+		    out.close();  
+		  
+		        }catch(Exception e){System.out.println(e);}  
+		  }
+
+	@Override
+	public String greetServer(String name) throws IllegalArgumentException {
+		// TODO Auto-generated method stub
+		return null;
+	}  
+}

@@ -1,0 +1,7 @@
+
+public class skk3 extends Skk1 {
+public void skk2(){
+	super();
+	System.out.println("bbbbbbbbbbbbb");
+}
+}
